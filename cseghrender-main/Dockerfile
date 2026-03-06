@@ -7,7 +7,7 @@ COPY src ./src
 
 RUN mvn clean package -DskipTests
 
-# Use smaller JDK image to run app
+# Use smaller JDK image to run 
 FROM eclipse-temurin:21-jdk
 
 WORKDIR /app
